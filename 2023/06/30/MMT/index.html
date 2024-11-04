@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="经济学," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="如果你有关注过经济相关的新闻，那么一定不会对于MMT感到陌生。他通常和政府债务上限的提高，QE等操作同时出现。MMT(Morden Money Theory)，也被称为现代货币理论。他为所有人提供了一个美好的景象，即政府可以不在意预算赤字，并实现价格稳定同时的充分就业。 然而MMT自出现以来，他和他的支持者兰德尔就受到了反对，且主流经济学也并不接受MMT。本文基于《The Critics of M">
+<meta property="og:type" content="article">
+<meta property="og:title" content="现代货币理论正确与否">
+<meta property="og:url" content="http://example.com/2023/06/30/MMT/index.html">
+<meta property="og:site_name" content="EconNerd">
+<meta property="og:description" content="如果你有关注过经济相关的新闻，那么一定不会对于MMT感到陌生。他通常和政府债务上限的提高，QE等操作同时出现。MMT(Morden Money Theory)，也被称为现代货币理论。他为所有人提供了一个美好的景象，即政府可以不在意预算赤字，并实现价格稳定同时的充分就业。 然而MMT自出现以来，他和他的支持者兰德尔就受到了反对，且主流经济学也并不接受MMT。本文基于《The Critics of M">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-06-30T09:30:57.000Z">
+<meta property="article:modified_time" content="2023-07-05T05:12:49.906Z">
+<meta property="article:author" content="EconNerd">
+<meta property="article:tag" content="经济学">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://example.com/2023/06/30/MMT/"/>
+
+
+
+
+
+  <title>现代货币理论正确与否 | EconNerd</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">EconNerd</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Underlying most arguments against the free market is a lack of belief in freedom itself - Milton Friedman</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/06/30/MMT/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="EconNerd">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">现代货币理论正确与否</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2023-06-30T17:30:57+08:00">
+                2023-06-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>如果你有关注过经济相关的新闻，那么一定不会对于MMT感到陌生。他通常和政府债务上限的提高，QE等操作同时出现。MMT(Morden Money Theory)，也被称为现代货币理论。他为所有人提供了一个美好的景象，即政府可以不在意预算赤字，并实现价格稳定同时的充分就业。</p>
+<p>然而MMT自出现以来，他和他的支持者兰德尔就受到了反对，且主流经济学也并不接受MMT。本文基于《The Critics of Modern Money Theory (MMT) are Right》简要介绍MMT理论以及其反对者的观点。</p>
+<h1 id="MMT简介"><a href="#MMT简介" class="headerlink" title="MMT简介"></a>MMT简介</h1><p>兰德尔针对现代货币理论出版了许多书籍（虽然并没有在高水平学术期刊上有过发表），例如《现代货币理论》。单总体来说我们可以从以下的六个方面来对于现代货币理论进行总结。</p>
+<ol>
+<li>货币当局与财政当局的独立性</li>
+<li>货币的来源</li>
+<li>政府的融资约束</li>
+<li>价格稳定的同时充分就业&#x2F;ELR(employer of last resort)</li>
+<li>私人部门和政府部门的核算关系</li>
+<li>利率政策与金融稳定</li>
+</ol>
+<h2 id="货币当局与财政当局的独立性"><a href="#货币当局与财政当局的独立性" class="headerlink" title="货币当局与财政当局的独立性"></a>货币当局与财政当局的独立性</h2><p>通常来说，中央银行应该保持自己的独立性，而丁伯根法则是这一观点的主要论据。丁伯根法则认为为达到一个经济目标，政府至少要运用一种有效的政策；为达到几个目标，政府至少要运用几个独立、有效的经济政策。因此当央行独立以货币量为目标时更达到更好的效果。</p>
+<p>MMT假设货币当局与财政当局并不存在独立性，他们之间协调合作来实施稳定性政策。</p>
+<h2 id="货币的来源"><a href="#货币的来源" class="headerlink" title="货币的来源"></a>货币的来源</h2><p>现代货币理论中的现代修饰的并不是理论，而是货币。因此理解现代货币理论最核心的点就是理解他说的货币理论。针对货币来源有着几个不同的观点</p>
+<p>从物物交换到交易媒介再到金银，金本位。这种货币观点被 Georg Friedrich Knapp 称为货币金属论 (Metallism)。而发展到现在更流行的观点为信用货币。</p>
+<p>另一种观点则为国定货币论 (Chartalism)，他认为货币是法律的产物，而不是一种商品。</p>
+<p>Alfred Mitchell-Innes: money exists not as a medium of exchange but as a standard of deferred payment, with government money being debt the government may reclaim through taxation.</p>
+<p>MMT 吸收了国定货币学说，认为货币并不是作为一个商品一步一步发展起来的，而是政府创造的。私人部门需要货币来进行税收。因此也可以叫做税收驱动币 (Tax-driven money)</p>
+<h2 id="政府的融资约束"><a href="#政府的融资约束" class="headerlink" title="政府的融资约束"></a>政府的融资约束</h2><p>政府并不存在着融资约束，只要经济中存在着生产产品和提供服务所创造的货币需求，政府就可以不断通过赤字货币化来进行融资。</p>
+<h2 id="价格稳定的同时充分就业-x2F-ELR"><a href="#价格稳定的同时充分就业-x2F-ELR" class="headerlink" title="价格稳定的同时充分就业&#x2F;ELR"></a>价格稳定的同时充分就业&#x2F;ELR</h2><p>最后雇佣者 (employer of last resort,ELR) 与央行的最后贷款人(lender of last resort) 职能相对应，是指大政府通过债务融资来保证全社会的充分就业。</p>
+<p>只要经济系统中存在非自愿失业，政府就应该通过债务融资来雇用劳动者，以此来保持充分就业。只要最后雇佣者工资是固定的，货币的币值稳定就可以得到保证。</p>
+<h2 id="私人部门的盈余一定来自政府部门"><a href="#私人部门的盈余一定来自政府部门" class="headerlink" title="私人部门的盈余一定来自政府部门"></a>私人部门的盈余一定来自政府部门</h2><p>可以通过简单的恒等式得到<br>Y &#x3D; C + I + G &#x3D; C + S + T<br>I−S &#x3D; T−G &#x3D; D</p>
+<h2 id="自然利率是-0，且短期利率应该被设定为-0"><a href="#自然利率是-0，且短期利率应该被设定为-0" class="headerlink" title="自然利率是 0，且短期利率应该被设定为 0"></a>自然利率是 0，且短期利率应该被设定为 0</h2><p>MMT 认为自然利率是 0，且短期利率应该被设定为 0。</p>
+<p>现代货币理论否认政府财政平衡的意义，相反，私人部门盈利能力不足、有效需求不足的根本原因正是政府赤字不足，而这会破坏金融体系的稳定性。当私人部门盈余不足以支持其债务的还本付息时，经济体自然会从健康融资阶段过渡到庞氏融资阶段。</p>
+<p>整体来看，我们可以通过以下几点来总结MMT</p>
+<ol>
+<li><p>MMT 首先假设了货币当局与财政当局是通力协作的。并且基于国定货币学说来描述货币，认为由于政府有着发行货币的垄断权力，因此总是可以通过赤字货币化来进行融资，不存在着融资约束。</p>
+</li>
+<li><p>再这样的情况下，政府可以通过债务融资来保证全社会的充分就业。从而实现价格稳定情况下的充分就业。</p>
+</li>
+<li><p>反对平衡预算，支持政府赤字。</p>
+</li>
+<li><p>MMT 理论认为价格稳定情况下的充分就业是他独有的理论贡献。</p>
+</li>
+</ol>
+<h1 id="针对-MMT-的批评"><a href="#针对-MMT-的批评" class="headerlink" title="针对 MMT 的批评"></a>针对 MMT 的批评</h1><p>针对上述的六点论点，《The Critics of Modern Money Theory (MMT) are Right》的作者Palley分别给出的反驳。不过首先他还是给出了对于MMT的总体评价，即“The criticism is that MMT is a mix of old and new, the old is correct and well understood, while the new is substantially wrong.”</p>
+<h2 id="独立性假设"><a href="#独立性假设" class="headerlink" title="独立性假设"></a>独立性假设</h2><p>独立性假设：MMT 假设货币当局与财政当局是通力协作的。在传统的凯恩斯主义的分析中也会考虑这样的情况下，如何实施稳定政策。但需要注意的是以下所有的分析都受制于这个假设。</p>
+<h2 id="货币的来源-1"><a href="#货币的来源-1" class="headerlink" title="货币的来源"></a>货币的来源</h2><p>货币的来源：MMT 认为是政府创造了货币，即政府可以确定货币是什么。但是也存在着市场自行创造了货币，例如bitcoin和阿根廷&#x2F;津巴布韦使用美元。</p>
+<p>因此问题在于货币是内生的还是外生的。由政府和市场创造的都是内生性的货币。由黄金创造的就是外生性的货币。</p>
+<h2 id="融资约束"><a href="#融资约束" class="headerlink" title="融资约束"></a>融资约束</h2><p>融资约束方面，Palley认为关于融资约束，现有的理论已经可以解释了。政府总是可以通过货币化来实现融资，这样会使得高能货币不断增长。</p>
+<h2 id="价格稳定的同时充分就业"><a href="#价格稳定的同时充分就业" class="headerlink" title="价格稳定的同时充分就业"></a>价格稳定的同时充分就业</h2><p>这里的充分就业被定义为总需求的增加并不导致就业率的上升。MMT 认为通过实施 ELR 计划就能实现价格稳定的同时充分就业。缺乏关于通货膨胀的理论:MMT 拒绝了传统的菲利普斯曲线，只认为存在两种状态、通货膨胀与非通货膨胀。ELR 并没有中和通货膨胀的能力。</p>
+<p>价格稳定的同时充分就业需要一个理论，但是 MMT 的支持者并没有给出一个理论来论证。且政府购买存在着最小值的约束、税收比率存在着最大值的约束，因此这个目标可能并无法实现</p>
+<h2 id="利率政策与金融稳定"><a href="#利率政策与金融稳定" class="headerlink" title="利率政策与金融稳定"></a>利率政策与金融稳定</h2><p>MMT 认为自然利率为 0，且短期利率应该被设定为 0。而且认为金融不稳定的因素就来源于政府赤字不足。实际上 0 利率政策会减少融资成本，更容易导致金融泡沫的产生，从而使得金融不稳定。</p>
+<p>虽然都认同需要进行金融管制，但是 MMT 关于金融不稳定的来源因素与主流经济学存在着区别，且没有意识到自己的利率政策也会导致金融不稳定。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>因此关于MMT的总结，还是可以套用之前的一句话。</p>
+<p>The criticism is that MMT is a mix of old and new, the old is correct and well understood, while the new is substantially wrong.</p>
+<p>而关于为什么MMT会受到这么多关注，Palley也给出了自己的解答。</p>
+<p>Given this, why has MMT recently garnered more attention? The answer is that it is a policy polemic for depressed times. A policy polemic that promises full employment and price stability at little cost will always garner some attention owing to the phenomenon of the demand for difference: controversial ideas garner attention.</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E7%BB%8F%E6%B5%8E%E5%AD%A6/" rel="tag"># 经济学</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2023/06/29/lecture-game-theory/" rel="next" title="博弈论讲义">
+                <i class="fa fa-chevron-left"></i> 博弈论讲义
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2023/07/02/%E6%B3%95%E7%90%86%E5%AD%A6/" rel="prev" title="法理学">
+                法理学 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#MMT%E7%AE%80%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">MMT简介</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B4%A7%E5%B8%81%E5%BD%93%E5%B1%80%E4%B8%8E%E8%B4%A2%E6%94%BF%E5%BD%93%E5%B1%80%E7%9A%84%E7%8B%AC%E7%AB%8B%E6%80%A7"><span class="nav-number">1.1.</span> <span class="nav-text">货币当局与财政当局的独立性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B4%A7%E5%B8%81%E7%9A%84%E6%9D%A5%E6%BA%90"><span class="nav-number">1.2.</span> <span class="nav-text">货币的来源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%94%BF%E5%BA%9C%E7%9A%84%E8%9E%8D%E8%B5%84%E7%BA%A6%E6%9D%9F"><span class="nav-number">1.3.</span> <span class="nav-text">政府的融资约束</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%B7%E6%A0%BC%E7%A8%B3%E5%AE%9A%E7%9A%84%E5%90%8C%E6%97%B6%E5%85%85%E5%88%86%E5%B0%B1%E4%B8%9A-x2F-ELR"><span class="nav-number">1.4.</span> <span class="nav-text">价格稳定的同时充分就业&#x2F;ELR</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A7%81%E4%BA%BA%E9%83%A8%E9%97%A8%E7%9A%84%E7%9B%88%E4%BD%99%E4%B8%80%E5%AE%9A%E6%9D%A5%E8%87%AA%E6%94%BF%E5%BA%9C%E9%83%A8%E9%97%A8"><span class="nav-number">1.5.</span> <span class="nav-text">私人部门的盈余一定来自政府部门</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E7%84%B6%E5%88%A9%E7%8E%87%E6%98%AF-0%EF%BC%8C%E4%B8%94%E7%9F%AD%E6%9C%9F%E5%88%A9%E7%8E%87%E5%BA%94%E8%AF%A5%E8%A2%AB%E8%AE%BE%E5%AE%9A%E4%B8%BA-0"><span class="nav-number">1.6.</span> <span class="nav-text">自然利率是 0，且短期利率应该被设定为 0</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%92%88%E5%AF%B9-MMT-%E7%9A%84%E6%89%B9%E8%AF%84"><span class="nav-number">2.</span> <span class="nav-text">针对 MMT 的批评</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%8B%AC%E7%AB%8B%E6%80%A7%E5%81%87%E8%AE%BE"><span class="nav-number">2.1.</span> <span class="nav-text">独立性假设</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B4%A7%E5%B8%81%E7%9A%84%E6%9D%A5%E6%BA%90-1"><span class="nav-number">2.2.</span> <span class="nav-text">货币的来源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%9E%8D%E8%B5%84%E7%BA%A6%E6%9D%9F"><span class="nav-number">2.3.</span> <span class="nav-text">融资约束</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%B7%E6%A0%BC%E7%A8%B3%E5%AE%9A%E7%9A%84%E5%90%8C%E6%97%B6%E5%85%85%E5%88%86%E5%B0%B1%E4%B8%9A"><span class="nav-number">2.4.</span> <span class="nav-text">价格稳定的同时充分就业</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%A9%E7%8E%87%E6%94%BF%E7%AD%96%E4%B8%8E%E9%87%91%E8%9E%8D%E7%A8%B3%E5%AE%9A"><span class="nav-number">2.5.</span> <span class="nav-text">利率政策与金融稳定</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">EconNerd</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
