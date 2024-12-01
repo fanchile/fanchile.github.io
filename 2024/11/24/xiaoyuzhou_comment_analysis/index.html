@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha256-5eIC48iZUHmSlSUz9XtjRyK2mzQkHScZY1WdMaoz74E=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.21.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="最开始是看到小宇宙上《商业就是这样》最新的一期和小宇宙自己COO的对谈节目，里面一条评论非常明显地表达了自己对于COO的不那么正面的评价“互联网大厂辞藻堆砌精华。听得最难受的一期没有之一。难受得我专门从苹果播客跑来小宇宙吐槽。” 熟悉播客的听众应该对“泛用型客户端”客户端这个概念不陌生。他最大的特点就在于主播是否需要单独上传音频。对于主播来说，想要在喜马拉雅、网易云音乐这样的客户端被听到，需要将音">
+<meta property="og:type" content="article">
+<meta property="og:title" content="小宇宙是友好的社区吗">
+<meta property="og:url" content="http://example.com/2024/11/24/xiaoyuzhou_comment_analysis/index.html">
+<meta property="og:site_name" content="Hello">
+<meta property="og:description" content="最开始是看到小宇宙上《商业就是这样》最新的一期和小宇宙自己COO的对谈节目，里面一条评论非常明显地表达了自己对于COO的不那么正面的评价“互联网大厂辞藻堆砌精华。听得最难受的一期没有之一。难受得我专门从苹果播客跑来小宇宙吐槽。” 熟悉播客的听众应该对“泛用型客户端”客户端这个概念不陌生。他最大的特点就在于主播是否需要单独上传音频。对于主播来说，想要在喜马拉雅、网易云音乐这样的客户端被听到，需要将音">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/images/xiaoyuzhou_comments_analysis/jike%E8%AF%84%E8%AE%BA.png">
+<meta property="og:image" content="http://example.com/images/xiaoyuzhou_comments_analysis/pie_chart_isFriendly.png">
+<meta property="og:image" content="http://example.com/images/xiaoyuzhou_comments_analysis/twitterroberta.png">
+<meta property="og:image" content="http://example.com/images/xiaoyuzhou_comments_analysis/StructBERT.png">
+<meta property="og:image" content="http://example.com/images/xiaoyuzhou_comments_analysis/commentstangping.png">
+<meta property="og:image" content="http://example.com/images/xiaoyuzhou_comments_analysis/histogram_text_length.png">
+<meta property="og:image" content="http://example.com/images/xiaoyuzhou_comments_analysis/histogram_sentiment.png">
+<meta property="article:published_time" content="2024-11-24T14:50:07.000Z">
+<meta property="article:modified_time" content="2024-12-01T14:57:24.312Z">
+<meta property="article:author" content="Fanchile">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/xiaoyuzhou_comments_analysis/jike%E8%AF%84%E8%AE%BA.png">
+
+
+<link rel="canonical" href="http://example.com/2024/11/24/xiaoyuzhou_comment_analysis/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2024/11/24/xiaoyuzhou_comment_analysis/","path":"2024/11/24/xiaoyuzhou_comment_analysis/","title":"小宇宙是友好的社区吗"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>小宇宙是友好的社区吗 | Hello</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Hello</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E8%AF%84%E4%BB%B7%E4%B8%80%E4%B8%AA%E8%AF%84%E8%AE%BA"><span class="nav-number">1.</span> <span class="nav-text">如何评价一个评论</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E8%AF%84%E8%AE%BA%E7%9A%84%E5%88%86%E6%9E%90"><span class="nav-number">2.</span> <span class="nav-text">关于评论的分析</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%84%E8%AE%BA%E7%9A%84%E9%95%BF%E5%BA%A6"><span class="nav-number">2.1.</span> <span class="nav-text">评论的长度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%84%E8%AE%BA%E7%9A%84%E6%83%85%E6%84%9F%E5%88%86%E6%9E%90"><span class="nav-number">2.2.</span> <span class="nav-text">评论的情感分析</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%93%E8%AE%BA"><span class="nav-number">3.</span> <span class="nav-text">结论</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%86%99%E5%9C%A8%E6%9C%80%E5%90%8E"><span class="nav-number">4.</span> <span class="nav-text">写在最后</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Fanchile</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/24/xiaoyuzhou_comment_analysis/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Fanchile">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hello">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="小宇宙是友好的社区吗 | Hello">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          小宇宙是友好的社区吗
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2024-11-24 22:50:07" itemprop="dateCreated datePublished" datetime="2024-11-24T22:50:07+08:00">2024-11-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-12-01 22:57:24" itemprop="dateModified" datetime="2024-12-01T22:57:24+08:00">2024-12-01</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>最开始是看到小宇宙上《商业就是这样》最新的一期和小宇宙自己COO的对谈节目，里面一条评论非常明显地表达了自己对于COO的不那么正面的评价“互联网大厂辞藻堆砌精华。听得最难受的一期没有之一。难受得我专门从苹果播客跑来小宇宙吐槽。”</p>
+<p>熟悉播客的听众应该对“泛用型客户端”客户端这个概念不陌生。他最大的特点就在于主播是否需要单独上传音频。对于主播来说，想要在喜马拉雅、网易云音乐这样的客户端被听到，需要将音频单独上传，而在泛用型客户端就无需单独上传（当然还得在托管平台上传），提交一个RSS地址即可分发到多个客户端。</p>
+<p>理论上来讲，小宇宙和苹果播客都属于泛用型客户端，但是为什么上面这位听众要从苹果播客专门跑到小宇宙来吐槽呢。这里存在一个用于区分平台更重要的因素-评论。</p>
+<p>我最早接触播客这个载体还是直接从网页上收听“This American Life”，由于使用的是安卓设备，在移动端我使用了泛用型客户端AntennaPod。而在这个客户端上，每一集的播客根本<strong>没有</strong>评论区。对于播客的发现机制更是非常简单。</p>
+<p>现在回想来看，相较于是否是泛用型客户端，其实是否有评论区更加区分了播客软件。在三年前一个用户的即刻动态上，他就认为小宇宙是一个非泛用型播客，而下面除了一条在讨论RSS订阅以外，其他用户其实都在针对小宇宙的评论区进行讨论。<br><img src="/images/xiaoyuzhou_comments_analysis/jike%E8%AF%84%E8%AE%BA.png"><br>例如有个用户就说“我也用的podcast，主要是小宇宙评论区大笨蛋太多了。给嘉宾抬杠的，嫌弃主播插嘴的，发表低智言论的，比比皆是。”</p>
+<p>而我认为，相较于网易云、喜马拉雅等其他音频软件，小宇宙能脱颖而出部分因为他的评论区为他构建了独特的社区生态。在传播中，不单是主播向听众的单向传播，而是听众和主播直接的双向互动（虽然仍然不对等就是了）。</p>
+<p>那小宇宙是个怎么样的社区呢？我们上面看到的评论是个例，还是或就如前文的评论说到的，小宇宙评论区大笨蛋（懂的人应该知道这个笨蛋原本是什么）太多了</p>
+<p>所以为什么我们不把所有的评论都爬下来看一下呢，因此就有了接下来的事情。</p>
+<p>首先得确定研究对象，爬取所有的节目不显示也没意义，因为大多数节目可能活跃度还没到能够有大量评论的程度。因此我们就采用2023年小宇宙播客大赏中选取的新锐播客和年度播客。web端只能拿到每个播客最近15集的内容，每期播客采用了前20条评论，不过这样也够了。经过简单的爬虫和数据处理，最终得到了2w多条评论。</p>
+<h1 id="如何评价一个评论"><a href="#如何评价一个评论" class="headerlink" title="如何评价一个评论"></a>如何评价一个评论</h1><p>其实判断小宇宙是否是友好的社区仅从评论进行分析肯定是不足的，但是评论不同于主播生产的内容，它代表的是拥有更高活跃度的核心用户所生产的内容。</p>
+<p>那如何从是否友好的角度评价一条评论呢，其实小宇宙自己就对评论添加了“isFriendly”的标签，例如在本文最开始提到的评论就被小宇宙在“isFriendly”赋值为False。不过可能是最近才启用这个功能，较早的一些评论并没有这个赋值。</p>
+<p>所有这个友好地角度来看，友好和非友好的评论基本上比例为3：2<br><img src="/images/xiaoyuzhou_comments_analysis/pie_chart_isFriendly.png"><br>可能算没那么友好社区，但是如果深入看每一条评论，就能发现他对于友好的定义以及判断可能没那么符合常识</p>
+<p>以42章经最近一期播客《我在 Character.ai 做 Post Training｜对谈前 C.AI 模型应用算法专家 Ted》为例，在爬取的20条评论中有6条被判定为不友好的评论，分别是</p>
+<ul>
+<li>这期质量太高了 从头到尾没有一句废话 比那些嘻嘻哈哈的节目强太多</li>
+<li>DPO 的过程中模型就是看一大批好的答案和不好的答案，类似于学生只看题目和答案，并不会自己做题目。RLHF 是模型会要做题目给出答案，然后奖励模型反馈这个答案好还是不好，类似于学生做题，老师批改。这两个的对比很像一句诗，纸上得来终觉浅，绝知此事要躬行。</li>
+<li>模型的不可控要用更高频次的测试去迭代，迭代过程中每个人会去迭代不同的方向。 ——任何不可控的事情都是一样。</li>
+<li>我靠，最后一句直接起鸡皮疙瘩</li>
+<li>ASR说完总归省不掉的吧。第一个token出来就扔给LLM开始推理是不是不太对，顶多做prefix</li>
+<li>这种所谓的没使用用户数据的方式，似乎有那么点掩耳盗铃。</li>
+</ul>
+<p>如果从友好角度来看，其实最后一条可以算作是最不友好的了，第一条的踩一捧一也可以算作是某种程度上的不太友好。但是中间四条评论更多是一种中性地表达。</p>
+<p>很明显，小宇宙自身的判断模型并没有那么好，那我们就用人工智能模型来文本情感分析。理论上来说，我们使用的模型最好使用了一些社交媒体的数据进行训练，例如hf上这个基于twitter数据进行训练的情感分析模型。</p>
+<p><img src="/images/xiaoyuzhou_comments_analysis/twitterroberta.png"><br>但是用英文模型对中文进行应用效果还是存在偏差，因此我最后使用了modelscope上通义实验室发布的StructBERT情感分类模型（虽然最终效果还是不太行，但是凑合用着先吧）<br><img src="/images/xiaoyuzhou_comments_analysis/StructBERT.png"></p>
+<h1 id="关于评论的分析"><a href="#关于评论的分析" class="headerlink" title="关于评论的分析"></a>关于评论的分析</h1><p>关于评论文本的两种属性值得我们展开分析，除去前文提到的情感分析，小宇宙的社区氛围从评论的的长度就可见一斑。</p>
+<h2 id="评论的长度"><a href="#评论的长度" class="headerlink" title="评论的长度"></a>评论的长度</h2><p>在所有的2w条评论中，最长的评论达到了近2000字符的长度，而平均的字符长度也有70。直观来看70个字基本上是三行的内容，就如下图躺平侠的内容长度差不多。<br><img src="/images/xiaoyuzhou_comments_analysis/commentstangping.png"></p>
+<p><img src="/images/xiaoyuzhou_comments_analysis/histogram_text_length.png"><br>从长度的分布图来看，大多数的评论还是聚集在0-250字符的长度区间，整体的分布也符合直觉。越长的评论出现的频率越低。但是从绝对值来看，大于250字符的评论数量也达到了1000，大于100的评论数量更是达到了3000。</p>
+<p>当然，这里面肯定包含了一些听众自行生产的播客总结以及主播在评论区的广告内容。但是更多的还是听众基于播客内容而产生的反馈。<strong>而反馈内容的长，就是小宇宙评论区的第一个特点。</strong></p>
+<h2 id="评论的情感分析"><a href="#评论的情感分析" class="headerlink" title="评论的情感分析"></a>评论的情感分析</h2><p>上文提到的StructBERT模型会对文本进行两分类，给出正向和负向的概率。我们就只取正向的概率，每条评论情感倾向的分布如下图所示<br><img src="/images/xiaoyuzhou_comments_analysis/histogram_sentiment.png"><br>从结果上来看，整体的评论倾向还是偏正向的多。但是回到原始数据就会发现模型的识别效果并不令人满意。以最开始的互联网辞藻说评论为例，他在正向情感的得分高达到了0.93，这很明显和我们的判断以及小宇宙的判断算法存在着偏差。</p>
+<p>不过就算使用了情感七分类的模型，最终的效果也不够好。可能还是由于数据集以及模型本身的限制。受限于硬件资源和时间限制，我还没有尝试用大模型来做情感分析。</p>
+<p>尽管效果不如人意，但是模型还是给我们呈现了一个更坚实的趋势，即在这个模型判断下，<strong>小宇宙的评论区的正向情绪简直好到爆了。</strong></p>
+<h1 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h1><p>整体来看，无论是负面还是正面的评论，他们都需要有一个输出的对象。而落实在播客评论这个载体上，更多的评论是对于播客嘉宾或者主播的输出。</p>
+<p>但是小宇宙的评论区虽然有着如上述所说的存在正向和负向情感的评论，更多的应该是所谓”中立“态度的评论。这些评论即使在不认同播客所说的内容时也会不带强烈情绪地进行大量内容输出。在我看来，这些听众才是小宇宙相比于其他播客平台的立身之本。</p>
+<p>会过来看，友好与否其实无法让一个平台那么特别。例如最早的知乎大家也是很友好的，但是真正让知乎特别的可能是那说不清的”人在美国、刚下飞机“感以及在这种氛围下聚集在一起的用户，而友好的表达只是最终呈现出的结果罢了。</p>
+<p>态度和情绪是很难分离的，正是这一个个对情绪保持克制，输出自己态度的评论和主播一起构成了传播的闭环，形成了小宇宙。</p>
+<h1 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h1><p>传播中有个概念叫分众。不同于大众社会理论中将大众作为传播的受众，分众理论认为受众并不是同质的孤立个人的集合，而是具备了社会多样性的人群。大众传播媒介的发展，也呈现出专业化和分众化的趋势。</p>
+<p>曾经的无数个平台就是传播媒介分众的具象化。而现在播客平台小宇宙可以看作分众视角下新的传播媒介，他吸引了一部分相同特质的人。但是增长是平台永远的追求，他可以拥抱更多不同特征的人。但当平台容纳了过多人时，原来的群体在新的平台受众中已经微不足道了。可能最后一切传播的逻辑还是会回到大众传播。</p>
+<p>从Mikufans到B站，从”人在美国、刚下飞机“到”分享你刚编的故事”。Maybe小而美是平台的一种诅咒</p>
+<p>PS. 所有相关的代码以及中间数据都开源在我的Github（<a target="_blank" rel="noopener" href="https://github.com/fanchile/Xiaoyuzhou_Comments">fanchile&#x2F;Xiaoyuzhou_Comments</a>）。整个做的工作还有很多不足，例如评论下还有回复，一个层层递进的关系。这块没有考虑到。但是平台目前本身量级较小，这样忽略的数据不会很多，也受限于我自身技术水平，所以没有进行分析。<br>Maybe等24年大赏出来后再做点新的分析，简单试用了一下目前大模型厂商web端的服务来用于情感分析，整体效果还是符合人类直觉的。如果算力资源充足感觉小宇宙可以尝试自己微调个模型来做情感分析。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/11/14/about_reading/" rel="prev" title="关于阅读">
+                  <i class="fa fa-angle-left"></i> 关于阅读
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2024/12/01/franchise-intro/" rel="next" title="加盟连锁背后的商业模式：特许经营">
+                  加盟连锁背后的商业模式：特许经营 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Fanchile</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
